@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>获取元素</title>
+		<script src="js/jquery-1.11.1.js" type="text/javascript" charset="utf-8"></script>
+		<style type="text/css">
+			div{width:50px;height:50px;}
+		</style>
+	</head>
+	<body>
+		<div class="box" id="boxid"></div>
+		<ul>
+			<li class="cur" title="y2"></li>
+			<li></li>
+			<li></li>
+			<li></li>
+		</ul>
+		<span></span>
+		<div class="oo"></div>
+		<script type="text/javascript">
+			$("div").css("border","5px solid red");
+			$(".box").css("background","blue");
+			$("#boxid").css("border-radius","10px");
+			$("div").filter(".oo").css("background","#FF6600").css("border","5px solid #333");
+			$("li:odd").css("background","#CC0000");
+			$("li:even").css("background","#333");
+			$("li:eq(1)").css("border","2px solid green");//eq从0开始
+			$("li").filter("[title=y2]").css("background","#FF6600");
+		</script>
+	</body>
+</html>
